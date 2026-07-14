@@ -358,9 +358,14 @@ const WINDSOR_DATA={
       totalSessions:1500657,totalActiveUsers:1504193,totalNewUsers:1499913,
       medMap:{'(none)':1473334,'organic':14582,'cpc':7254,'email':297,'(not set)':10706},
       // ── Shopify ──────────────────────────────────────────────────────
-      shopRevByDay:[3574.50,2664.00,3412.50,1877.00,2845.00,3506.00,2661.50,1366.50,1654.50,2771.50,1648.50,1564.50,1682.50,3301.50,3361.00,3476.00,2485.00,4621.00,2936.50,1391.50,2808.00,1789.50,4172.50,2763.50,3064.91,3079.73,3480.73,1806.00,2373.50,1336.50],
-      shopOrdByDay:[13,9,13,9,13,9,8,8,6,11,8,9,7,11,12,13,12,16,14,7,14,10,15,11,13,20,13,11,8,8],
-      totalShopRevenue:79475.87,totalOrders:331,totalRefunds:0,aov:240.11,
+      shopRevByDay:[3231.15,2050.80,0,718.20,2513.50,3171.70,2402.25,1057.76,1495.95,2446.45,1021.75,1132.75,1535.05,2977.75,2947.60,1845.65,2116.60,3716.00,2666.00,1265.35,2542.20,1232.80,3764.75,2289.05,2768.52,2758.26,3143.06,1643.60,1822.00,978.75],
+      shopOrdByDay:[13,9,0,3,13,9,8,8,6,11,8,9,7,11,12,13,12,16,14,7,14,10,15,11,13,20,13,11,8,8],
+      shopTaxByDay:[0,63.53,0,0,52.81,0,0,63.40,6.39,42.92,0,147.34,0,0,33.93,16.02,39.55,71.26,0,43.88,11.07,38.64,0,0,132.03,24.70,18.40,29.13,31.94,1.55],
+      shopDutiesByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10.50,5.30,0,0,0,0],
+      shopFeesByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      totalSalesByDay:[3231.15,2114.33,0,718.20,2566.31,3171.70,2402.25,1121.16,1502.34,2489.37,1021.75,1280.09,1535.05,2977.75,2981.53,1861.67,2156.15,3787.26,2666.00,1309.23,2553.27,1271.44,3764.75,2289.05,2911.05,2788.26,3161.46,1672.73,1853.94,980.30],
+      totalShopRevenue:63255.25,totalOrders:312,totalRefunds:0,aov:202.74,
+      totalTax:868.49,totalDuties:15.80,totalFees:0,totalSales:64139.54,aovTotal:205.58,
       // ── Klaviyo ──────────────────────────────────────────────────────
       emailByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
       emailTotal:0,emailRecipients:9686,
@@ -783,6 +788,12 @@ function applyWindsorOverride(data,w){
   if(w.totalOrders!=null) data.totalOrders=w.totalOrders;
   if(w.totalRefunds!=null) data.totalRefunds=w.totalRefunds;
   if(w.aov!=null) data.aov=w.aov;
+  if(w.totalSales!=null) data.totalSales=w.totalSales;
+  if(w.totalTax!=null) data.totalTax=w.totalTax;
+  if(w.totalDuties!=null) data.totalDuties=w.totalDuties;
+  if(w.totalFees!=null) data.totalFees=w.totalFees;
+  if(w.aovTotal!=null) data.aovTotal=w.aovTotal;
+  if(w.totalSalesByDay) data.totalSalesByDay=w.totalSalesByDay;
   if(w.emailByDay) data.emailByDay=w.emailByDay;
   if(w.emailTotal!=null) data.emailTotal=w.emailTotal;
   if(w.emailRecipients!=null) data.emailRecipients=w.emailRecipients;
@@ -984,7 +995,8 @@ function renderClient(clientName){
       </div>
       <div class="chart-card" style="margin-bottom:0"><h3>Órdenes diarias · Shopify</h3><div class="sub">${period}</div><svg id="shop-ord-chart" viewBox="0 0 800 180" preserveAspectRatio="none"></svg><div class="legend"><span><span class="dot" style="background:#95BF47"></span>Sobre promedio</span><span><span class="dot" style="background:var(--gray-400)"></span>Bajo promedio</span></div></div>`;
     setSkRow('sh-sk-row',[
-      skCard('Ventas',$m(data.totalShopRevenue),deltaHTML(data.totalShopRevenue,R?.totalShopRevenue,'up-good'),R&&R.totalShopRevenue>0?$m(R.totalShopRevenue):null,'shopify',CUR),
+      skCard('Ventas Netas',$m(data.totalShopRevenue),deltaHTML(data.totalShopRevenue,R?.totalShopRevenue,'up-good'),R&&R.totalShopRevenue>0?$m(R.totalShopRevenue):null,'shopify',CUR),
+      ...(data.totalSales!=null?[skCard('Total Sales',$m(data.totalSales),deltaHTML(data.totalSales,R?.totalSales,'up-good'),R&&R.totalSales>0?$m(R.totalSales):null,'shopify',CUR)]:[]),
       skCard('Órdenes',data.totalOrders.toString(),deltaHTML(data.totalOrders,R?.totalOrders,'up-good'),R?R.totalOrders.toString():null,'shopify','órdenes'),
       skCard('AOV',$m(data.aov),deltaHTML(data.aov,R?.aov,'up-good'),R&&R.aov>0?$m(R.aov):null,'shopify',CUR),
       skCard('Refunds',$m(data.totalRefunds),deltaHTML(data.totalRefunds,R?.totalRefunds,'down-good'),R?$m(R.totalRefunds):null,'shopify',CUR),
