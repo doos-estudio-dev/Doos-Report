@@ -4,12 +4,12 @@
 .loading-wrap{display:flex;align-items:center;justify-content:center;min-height:40vh;flex-direction:column;gap:16px;}.loading-dot{width:10px;height:10px;border-radius:50%;background:var(--black);animation:pulse 1.2s var(--ease) infinite;}.loading-wrap p{font-size:13px;color:var(--gray-700);}@keyframes pulse{0%,100%{opacity:.2;transform:scale(.8);}50%{opacity:1;transform:scale(1);}}
 .hero{padding:64px 0 40px;}.hero .tag{font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gray-700);margin-bottom:20px;font-weight:500;}.hero h1{font-size:clamp(44px,7.5vw,110px);font-weight:900;line-height:0.9;letter-spacing:-0.04em;margin-bottom:0;}.hero h1 em{font-style:normal;font-weight:900;color:var(--mint);}.hero .subtitle{margin-top:24px;font-size:15px;color:var(--gray-700);max-width:720px;line-height:1.6;}.hero .subtitle b{color:var(--black);font-weight:600;}
 .hero-metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}.hm-chip{background:var(--white);border:1.5px solid var(--gray-200);border-radius:10px;padding:12px 18px;min-width:0;transition:border-color .18s;}.hm-chip:hover{border-color:var(--gray-400);}.hm-chip .hm-l{font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-700);margin-bottom:5px;}.hm-chip .hm-v{font-size:22px;font-weight:800;letter-spacing:-0.02em;color:var(--black);line-height:1;}
-.sk-row{display:grid;gap:10px;margin-bottom:28px;}.sk-card{background:var(--dark);color:var(--white);border-radius:12px;padding:20px 18px 16px;min-width:0;display:flex;flex-direction:column;border-top:3px solid rgba(255,255,255,.1);}.sk-card.sk-google{border-top-color:#4285F4;}.sk-card.sk-ga4{border-top-color:#E37400;}.sk-card.sk-shopify{border-top-color:#95BF47;}.sk-card.sk-klaviyo{border-top-color:var(--mint);}.sk-label{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:14px;}.sk-value{font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;flex:1;}.sk-foot{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-height:26px;border-top:1px solid rgba(255,255,255,.08);padding-top:10px;margin-top:12px;}.sk-prev{font-size:10px;color:#60A5FA;font-weight:600;}.sk-unit{font-size:8px;font-weight:700;letter-spacing:.1em;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.45);margin-left:6px;vertical-align:middle;display:inline-block;}
+.sk-row{display:grid;gap:10px;margin-bottom:28px;}.sk-card{background:var(--dark);color:var(--white);border-radius:12px;padding:20px 18px 16px;min-width:0;display:flex;flex-direction:column;border-top:3px solid rgba(255,255,255,.1);}.sk-card.sk-google{border-top-color:#4285F4;}.sk-card.sk-ga4{border-top-color:#E37400;}.sk-card.sk-gsc{border-top-color:#34A853;}.sk-card.sk-shopify{border-top-color:#95BF47;}.sk-card.sk-klaviyo{border-top-color:var(--mint);}.sk-label{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:14px;}.sk-value{font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;flex:1;}.sk-foot{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-height:26px;border-top:1px solid rgba(255,255,255,.08);padding-top:10px;margin-top:12px;}.sk-prev{font-size:10px;color:#60A5FA;font-weight:600;}.sk-unit{font-size:8px;font-weight:700;letter-spacing:.1em;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.45);margin-left:6px;vertical-align:middle;display:inline-block;}
 .sk-card{position:relative;}.sk-value{cursor:pointer;transition:opacity .15s;position:relative;}.sk-value:hover{opacity:.7;}.sk-value:hover::after{content:'✎';position:absolute;top:0;right:0;font-size:13px;opacity:.5;line-height:1;}.sk-value.sk-editing{opacity:1;cursor:default;}.sk-value.sk-editing::after{display:none;}.sk-edit-input{background:transparent;border:none;border-bottom:1.5px solid var(--mint);color:inherit;font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;width:100%;outline:none;padding:0;display:block;}.sk-card.sk-manual::after{content:'';position:absolute;top:8px;right:8px;width:6px;height:6px;border-radius:50%;background:var(--mint);pointer-events:none;}.sk-manual-reset{display:none;background:none;border:none;color:rgba(255,255,255,.35);font-size:9px;cursor:pointer;padding:0;letter-spacing:.06em;text-transform:uppercase;margin-left:auto;}.sk-card.sk-manual .sk-manual-reset{display:inline;}.sk-manual-reset:hover{color:var(--mint);}
 
 .kpi-hero{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:72px;}.kpi-card{background:var(--black);color:var(--white);border-radius:var(--radius);padding:24px 20px;}.kpi-card .label{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-400);font-weight:600;margin-bottom:20px;}.kpi-card .value{font-size:40px;font-weight:800;line-height:1;letter-spacing:-0.02em;margin-bottom:8px;}.kpi-card .sub{font-size:11px;color:var(--gray-400);}.kpi-card .kpi-delta{display:flex;align-items:center;gap:7px;margin-top:10px;flex-wrap:wrap;}.kpi-card .kpi-delta .c-prev{font-size:11px;color:rgba(255,255,255,.35);}
 .cmp-toggle-row{display:flex;align-items:center;gap:8px;margin-left:auto;}.cmp-toggle{background:var(--dark);border-radius:999px;padding:3px;display:flex;gap:2px;}.cmp-tab{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:999px;border:none;cursor:pointer;color:rgba(255,255,255,.45);background:none;font-family:var(--font);transition:all .18s var(--ease);white-space:nowrap;}.cmp-tab.active{background:var(--mint);color:var(--black);}
-.section{margin-bottom:80px;}.section-head{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid var(--gray-400);}.section-head .left{display:flex;align-items:center;gap:16px;}.section-head h2{font-size:56px;font-weight:900;letter-spacing:-0.03em;line-height:1;}.section-head .right{font-size:13px;color:var(--gray-700);line-height:1.5;}.section-head .right b{color:var(--black);font-weight:600;}.channel-dot{width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:20px;flex-shrink:0;}.channel-dot.google{background:#fff;border:1.5px solid var(--gray-200);}.channel-dot.shopify{background:#95BF47;}.channel-dot.klaviyo{background:#1D1D1D;border:2px solid var(--gray-400);}.channel-dot.facebook{background:#0866FF;}.sub-head{font-size:20px;font-weight:800;letter-spacing:-0.01em;margin:40px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--gray-200);color:var(--gray-700);}
+.section{margin-bottom:80px;}.section-head{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid var(--gray-400);}.section-head .left{display:flex;align-items:center;gap:16px;}.section-head h2{font-size:56px;font-weight:900;letter-spacing:-0.03em;line-height:1;}.section-head .right{font-size:13px;color:var(--gray-700);line-height:1.5;}.section-head .right b{color:var(--black);font-weight:600;}.channel-dot{width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:20px;flex-shrink:0;}.channel-dot.google{background:#fff;border:1.5px solid var(--gray-200);}.channel-dot.gsc{background:#34A853;}.channel-dot.shopify{background:#95BF47;}.channel-dot.klaviyo{background:#1D1D1D;border:2px solid var(--gray-400);}.channel-dot.facebook{background:#0866FF;}.sub-head{font-size:20px;font-weight:800;letter-spacing:-0.01em;margin:40px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--gray-200);color:var(--gray-700);}
 .two-col{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;}.chart-card{background:var(--white);border-radius:var(--radius);padding:24px;border:1px solid var(--gray-200);}.chart-card h3{font-size:14px;font-weight:700;margin-bottom:4px;}.chart-card .sub{font-size:12px;color:var(--gray-700);margin-bottom:20px;}.chart-card svg{width:100%;height:auto;display:block;}.legend{display:flex;gap:16px;margin-top:12px;font-size:11px;color:var(--gray-700);}.legend span{display:inline-flex;align-items:center;gap:6px;}.legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;}
 .insights{background:var(--black);color:var(--white);border-radius:var(--radius);padding:28px 24px;height:100%;}.insights h3{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;color:var(--mint);margin-bottom:20px;}.insights ul{list-style:none;display:flex;flex-direction:column;gap:14px;}.insights li{padding-left:18px;position:relative;font-size:13px;line-height:1.55;color:rgba(255,255,255,.88);display:flex;align-items:flex-start;}.insights li::before{content:"›";position:absolute;left:0;color:var(--mint);font-weight:700;font-size:18px;line-height:1;top:-1px;}.insights li b{color:var(--white);font-weight:600;}.insights li .tag{display:inline-block;font-size:9px;letter-spacing:0.15em;padding:2px 6px;border-radius:3px;text-transform:uppercase;font-weight:700;background:var(--mint);color:#0D0D0D;margin-right:6px;vertical-align:middle;}.insights li .tag.warn{background:var(--magenta);color:var(--white);}.insights li{cursor:default;}.insights li .i-row{display:flex;align-items:flex-start;gap:8px;cursor:pointer;width:100%;}.insights li .i-row .i-text{flex:1;min-width:0;}.insights li .i-row .i-arrow{flex-shrink:0;color:var(--mint);font-size:11px;margin-top:3px;transition:transform .2s var(--ease);}.insights li.open .i-row .i-arrow{transform:rotate(180deg);}.insights li .detail-text{display:none;margin-top:10px;font-size:11.5px;line-height:1.65;color:rgba(255,255,255,.88);border-left:2px solid var(--mint);padding-left:10px;}.insights li.open .detail-text{display:block;}
 .table-card{background:var(--white);border-radius:var(--radius);border:1px solid var(--gray-200);overflow:hidden;}.table-card table{width:100%;border-collapse:collapse;font-size:12px;}.table-card th{text-align:left;padding:12px 16px;background:var(--black);color:var(--white);font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;}.table-card th:not(:first-child),.table-card td:not(:first-child){text-align:right;}.table-card td{padding:12px 16px;border-bottom:1px solid var(--gray-200);}.table-card tbody tr:nth-child(even){background:var(--gray-100);}.table-card tbody tr:last-child{font-weight:700;background:var(--dark);color:var(--white);}.table-card tbody tr:last-child td{border-bottom:0;}.table-card td.bar-cell{padding:0 16px;}.bar{height:6px;background:var(--gray-200);border-radius:3px;overflow:hidden;min-width:60px;}.bar>div{height:100%;background:var(--mint);border-radius:3px;}
@@ -206,6 +206,25 @@ body.dark .month-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='h
     </div>
   </section></div>
 
+  <!-- SEARCH CONSOLE -->
+  <div class="shell hidden" id="section-gsc"><section class="section">
+    <div class="section-head"><div class="left"><div class="channel-dot gsc"><svg viewBox="0 0 24 24" width="26" height="26" fill="none"><circle cx="11" cy="11" r="7" stroke="white" stroke-width="2.2"/><line x1="16.5" y1="16.5" x2="22" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div><h2>Search Console</h2></div><div class="right" id="gsc-head-right"></div></div>
+    <div id="gsc-content">
+      <div class="sk-row" id="gsc-sk-row" style="grid-template-columns:repeat(4,1fr)"></div>
+      <div class="two-col" style="margin-bottom:24px">
+        <div class="chart-card"><h3>Clicks orgánicos diarios</h3><div class="sub" id="gsc-sub"></div><svg id="gsc-chart" viewBox="0 0 800 220" preserveAspectRatio="none"></svg><div class="legend"><span><span class="dot" style="background:#34A853"></span>Sobre promedio</span><span><span class="dot" style="background:var(--gray-400)"></span>Bajo promedio</span></div></div>
+        <div class="insights"><h3>Insights SEO</h3><ul id="gsc-insights"></ul></div>
+      </div>
+      <div class="chart-card" style="margin-bottom:0" id="gsc-queries-wrap">
+        <h3>Top Queries</h3>
+        <div style="overflow-x:auto"><table class="data-table" id="gsc-queries-table" style="width:100%;min-width:520px">
+          <thead><tr><th>Consulta</th><th>Clicks</th><th>Impresiones</th><th>CTR</th><th>Posición</th></tr></thead>
+          <tbody id="gsc-queries-tbody"></tbody>
+        </table></div>
+      </div>
+    </div>
+  </section></div>
+
   <!-- SHOPIFY -->
   <div class="shell" id="section-shopify"><section class="section">
     <div class="section-head"><div class="left"><div class="channel-dot" style="background:#fff;overflow:hidden;padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 101" width="46" height="46"><path fill="#95BF47" d="M77.667 19.756c-.07-.505-.51-.785-.877-.816-.363-.03-7.482-.139-7.482-.139s-5.954-5.781-6.542-6.37c-.588-.588-1.736-.41-2.183-.277-.006.003-1.118.347-2.99.927a20.969 20.969 0 00-1.433-3.518c-2.12-4.045-5.224-6.184-8.974-6.19h-.014c-.261 0-.52.025-.78.047a11.451 11.451 0 00-.338-.39c-1.635-1.749-3.73-2.6-6.24-2.525-4.844.138-9.668 3.637-13.58 9.851-2.752 4.373-4.847 9.866-5.44 14.119l-9.539 2.954c-2.808.883-2.896.969-3.263 3.616-.271 2-7.618 58.807-7.618 58.807L61.94 100.5l26.683-6.633S77.737 20.26 77.667 19.756zM54.51 14.035l-4.778 1.479c-.036-2.453-.327-5.865-1.47-8.814 3.676.696 5.485 4.855 6.248 7.335zm-7.999 2.477l-10.279 3.183c.994-3.804 2.877-7.591 5.191-10.074.86-.924 2.064-1.953 3.49-2.541 1.34 2.796 1.632 6.755 1.598 9.432zm-6.6-12.784c1.138-.025 2.095.225 2.913.763-1.31.68-2.574 1.657-3.762 2.93-3.076 3.301-5.435 8.426-6.375 13.37-2.933.907-5.801 1.797-8.442 2.613 1.667-7.782 8.19-19.46 15.666-19.676z"/><path fill="#5E8E3E" d="M76.793 18.943c-.363-.03-7.482-.139-7.482-.139s-5.954-5.782-6.542-6.37c-.22-.219-.516-.333-.827-.38l.003 88.443 26.68-6.63S77.74 20.263 77.67 19.758c-.07-.504-.513-.785-.877-.815z"/><path fill="#fff" d="M47.152 32.662l-3.099 11.594s-3.456-1.573-7.554-1.315c-6.01.38-6.073 4.17-6.012 5.121.327 5.186 13.969 6.318 14.734 18.463.602 9.555-5.068 16.092-13.239 16.608-9.807.618-15.206-5.166-15.206-5.166l2.078-8.84s5.435 4.101 9.785 3.827c2.841-.18 3.856-2.492 3.754-4.126-.428-6.764-11.536-6.364-12.238-17.478-.59-9.352 5.552-18.83 19.104-19.684 5.221-.336 7.893.996 7.893.996z"/></svg></div><h2>Shopify</h2></div><div class="right" id="shopify-head-right">Datos de e-commerce<br><b>pendientes de conexión</b></div></div>
@@ -299,7 +318,7 @@ const WINDSOR_DATA={
         {name:'Customer Thank You - New vs. Returning', recipients:7, openRate:0.7143,clickRate:0,     convRate:0,clicks:0},
       ],
       fbByDay:[],fbSpend:0,fbClicks:0,
-      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,
+      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,hasGSC:false,
     },
     // Mayo 2026 — fuente: Google Sheet 1T1JQciBWQ3OesBTPLYUbuGh6tajufo4e7Wrg03K3TPc tab "Data Urns Mayo 2026"
     // Mayo 2026 — fuente: Google Sheet 1T1JQciBWQ3OesBTPLYUbuGh6tajufo4e7Wrg03K3TPc tab "Data Urns Mayo 2026" (Mayo 1–31)
@@ -342,7 +361,7 @@ const WINDSOR_DATA={
       // ── Facebook ─────────────────────────────────────────────────────
       fbByDay:[],fbSpend:0,fbClicks:0,
       // ── Flags ────────────────────────────────────────────────────────
-      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,
+      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,hasGSC:false,
     },
     // Junio 2026 — fuente: Google Sheet 1i71t7oWMsZvRIDRIsDdI8u6SO8ZTfPUAPos6DF5F3_4 (Jun 1–30)
     '2026-06':{
@@ -389,8 +408,14 @@ const WINDSOR_DATA={
       ],
       // ── Facebook ─────────────────────────────────────────────────────
       fbByDay:[],fbSpend:0,fbClicks:0,
+      // ── Google Search Console ─────────────────────────────────────────
+      // Replace with real data from Search Console export (Jun 1–30 2026)
+      gscClicksByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      gscImprByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      totalGscClicks:0,totalGscImpressions:0,avgGscCtr:0,avgGscPosition:0,
+      gscTopQueries:[],
       // ── Flags ────────────────────────────────────────────────────────
-      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,
+      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,hasGSC:false,
     },
   },
 };
@@ -525,7 +550,9 @@ function aggregate(allRows,days){
     cpc:totalClicks>0?totalSpend/totalClicks:0,
     roas:totalSpend>0?totalShopRevenue/totalSpend:0,
     hasGoogle:gaRows.length>0, hasGA4:ga4Rows.length>0,
-    hasShopify:shopRows.length>0, hasEmail:klvRows.length>0, hasFacebook:fbRows.length>0
+    hasShopify:shopRows.length>0, hasEmail:klvRows.length>0, hasFacebook:fbRows.length>0,
+    hasGSC:false,
+    gscClicksByDay:[],gscImprByDay:[],totalGscClicks:0,totalGscImpressions:0,avgGscCtr:0,avgGscPosition:0,gscTopQueries:[]
   };
 }
 
@@ -807,6 +834,14 @@ function applyWindsorOverride(data,w){
   if(w.hasGA4!=null) data.hasGA4=w.hasGA4;
   if(w.hasShopify!=null) data.hasShopify=w.hasShopify;
   if(w.hasEmail!=null) data.hasEmail=w.hasEmail;
+  if(w.hasGSC!=null) data.hasGSC=w.hasGSC;
+  if(w.gscClicksByDay) data.gscClicksByDay=w.gscClicksByDay;
+  if(w.gscImprByDay) data.gscImprByDay=w.gscImprByDay;
+  if(w.totalGscClicks!=null) data.totalGscClicks=w.totalGscClicks;
+  if(w.totalGscImpressions!=null) data.totalGscImpressions=w.totalGscImpressions;
+  if(w.avgGscCtr!=null) data.avgGscCtr=w.avgGscCtr;
+  if(w.avgGscPosition!=null) data.avgGscPosition=w.avgGscPosition;
+  if(w.gscTopQueries) data.gscTopQueries=w.gscTopQueries;
   if(w.hasFacebook!=null) data.hasFacebook=w.hasFacebook;
   data.roas=(w.totalSpend>0&&w.totalShopRevenue>0)?w.totalShopRevenue/w.totalSpend:data.roas;
   data.cpc=(w.totalClicks>0&&w.totalSpend>0)?w.totalSpend/w.totalClicks:data.cpc;
@@ -983,6 +1018,67 @@ function renderClient(clientName){
       );
     }
     document.getElementById('ga4-insights').innerHTML=ga4Insights;
+  }
+
+  // ── SEARCH CONSOLE ───────────────────────────────────────────────
+  setHidden('section-gsc',!data.hasGSC);
+  if(data.hasGSC){
+    const gscC=data.totalGscClicks||0,gscI=data.totalGscImpressions||0;
+    const gscCtr=data.avgGscCtr||0,gscPos=data.avgGscPosition||0;
+    const Rg=R&&R.hasGSC?R:null;
+    document.getElementById('gsc-head-right').innerHTML=`Clicks: <b>${gscC.toLocaleString()}</b>&nbsp;&nbsp;Impresiones: <b>${gscI.toLocaleString()}</b>&nbsp;&nbsp;CTR: <b>${(gscCtr*100).toFixed(2)}%</b>&nbsp;&nbsp;Posición: <b>${gscPos.toFixed(1)}</b>`;
+    setSkRow('gsc-sk-row',[
+      skCard('Clicks',gscC.toLocaleString(),deltaHTML(gscC,Rg?.totalGscClicks,'up-good'),Rg?Rg.totalGscClicks.toLocaleString():null,'gsc','clicks'),
+      skCard('Impresiones',gscI.toLocaleString(),deltaHTML(gscI,Rg?.totalGscImpressions,'up-good'),Rg?Rg.totalGscImpressions.toLocaleString():null,'gsc','impr.'),
+      skCard('CTR Prom.',(gscCtr*100).toFixed(2)+'%',deltaHTML(gscCtr,Rg?.avgGscCtr,'up-good'),Rg?(Rg.avgGscCtr*100).toFixed(2)+'%':null,'gsc'),
+      skCard('Posición Prom.',gscPos.toFixed(1),deltaHTML(gscPos,Rg?.avgGscPosition,'down-good'),Rg?Rg.avgGscPosition.toFixed(1):null,'gsc'),
+    ]);
+    document.getElementById('gsc-sub').textContent=`Clicks orgánicos diarios · ${period}`;
+    const gscByDay=data.gscClicksByDay||filtDays.map(()=>0);
+    barChart('gsc-chart',gscByDay,labels,{yLabel:v=>Math.round(v),avgLabel:v=>'avg '+Math.round(v),colorFn:(v,avg)=>v>avg?'#34A853':'#CCCCCC',avgColor:'#2D9147',xAxisLabel:'Día',yAxisLabel:'Clicks',tipUnit:'clicks orgánicos'});
+    // Top queries table
+    const queries=data.gscTopQueries||[];
+    const tbody=document.getElementById('gsc-queries-tbody');
+    const wrap=document.getElementById('gsc-queries-wrap');
+    if(tbody&&queries.length){
+      if(wrap)wrap.style.display='';
+      tbody.innerHTML=queries.map(q=>`<tr style="cursor:pointer" onclick="this.classList.toggle('row-hl')">
+        <td data-label="Consulta"><b>${q.query}</b></td>
+        <td data-label="Clicks">${q.clicks.toLocaleString()}</td>
+        <td data-label="Impresiones">${q.impressions.toLocaleString()}</td>
+        <td data-label="CTR">${(q.ctr*100).toFixed(2)}%</td>
+        <td data-label="Posición">${q.position.toFixed(1)}</td>
+      </tr>`).join('');
+    } else if(wrap){wrap.style.display='none';}
+    // Insights
+    let gscInsights='';
+    if(Rg&&Rg.totalGscClicks>0){
+      const clkPct=((gscC-Rg.totalGscClicks)/Rg.totalGscClicks*100);
+      gscInsights+=insightLi(
+        `Clicks orgánicos <b>${clkPct>=0?'+':''}${clkPct.toFixed(0)}%</b> vs ${modeLabel}: <b>${gscC.toLocaleString()}</b> vs ${Rg.totalGscClicks.toLocaleString()}.`,
+        `${clkPct>=0?`El tráfico orgánico desde Google creció ${clkPct.toFixed(0)}% — señal positiva de mejora en posicionamiento o en CTR de los snippets.`:`Los clicks cayeron ${Math.abs(clkPct).toFixed(0)}% vs ${modeLabel}. Revisar si hubo cambios en rankings, actualizaciones de algoritmo o caída en impresiones.`}`
+      );
+    }
+    if(gscI>0){
+      gscInsights+=insightLi(
+        `CTR promedio <b>${(gscCtr*100).toFixed(2)}%</b> con <b>${gscI.toLocaleString()} impresiones</b>${Rg?` vs ${(Rg.avgGscCtr*100).toFixed(2)}% ${modeLabel}`:''}`,
+        `Un CTR de ${(gscCtr*100).toFixed(2)}% indica qué porcentaje de usuarios que ven el sitio en resultados hacen clic. ${gscCtr<0.02?'Bajo CTR puede deberse a títulos y meta descriptions poco atractivos, o a posiciones bajas en los resultados.':gscCtr>0.05?'CTR alto — los snippets y posicionamiento están funcionando bien.':'CTR en rango normal. Optimizar títulos y meta descriptions puede aumentarlo.'}`
+      );
+    }
+    if(gscPos>0){
+      gscInsights+=insightLi(
+        `Posición promedio <b>${gscPos.toFixed(1)}</b>${Rg?` vs ${Rg.avgGscPosition.toFixed(1)} ${modeLabel}`:''}`,
+        `La posición promedio de ${gscPos.toFixed(1)} indica el ranking típico en los resultados de búsqueda. ${gscPos<=10?'Excelente — el sitio aparece en la primera página para la mayoría de consultas.':gscPos<=20?'Segunda página — trabajar en mejorar las posiciones clave para llegar a la primera página.':'Hay oportunidades significativas de mejora en posicionamiento. Priorizar las queries con más impresiones y posiciones entre 11-20.'}`
+      );
+    }
+    if(queries.length>0){
+      const topQ=queries[0];
+      gscInsights+=insightLi(
+        `Query principal: <b>"${topQ.query}"</b> — ${topQ.clicks} clicks, posición ${topQ.position.toFixed(1)}`,
+        `Esta es la consulta que genera más tráfico orgánico. Optimizar el contenido alrededor de este término y las variantes semánticas puede amplificar el impacto.`
+      );
+    }
+    document.getElementById('gsc-insights').innerHTML=gscInsights||'<li>Agrega datos de Search Console para ver insights de SEO.</li>';
   }
 
   // ── SHOPIFY ──────────────────────────────────────────────────────
@@ -1387,6 +1483,7 @@ function buildFloatNav(){
   const sections=[
     {id:'section-google',lbl:'G',title:'Google Ads',c:'#4285F4'},
     {id:'section-ga4-wrap',lbl:'GA4',title:'GA4',c:'#E37400'},
+    {id:'section-gsc',lbl:'GSC',title:'Search Console',c:'#34A853'},
     {id:'section-shopify',lbl:'S',title:'Shopify',c:'#95BF47'},
     {id:'section-klaviyo',lbl:'K',title:'Klaviyo',c:'#01F2B0'},
   ];
