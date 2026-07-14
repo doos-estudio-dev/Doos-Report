@@ -342,6 +342,49 @@ const WINDSOR_DATA={
       // ── Flags ────────────────────────────────────────────────────────
       hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,
     },
+    // Junio 2026 — fuente: Google Sheet 1i71t7oWMsZvRIDRIsDdI8u6SO8ZTfPUAPos6DF5F3_4 (Jun 1–30)
+    '2026-06':{
+      // ── Google Ads ──────────────────────────────────────────────────
+      spendByDay:[244.35,234.50,238.77,243.86,310.03,201.69,195.50,304.17,201.16,0,0,133.38,377.34,352.36,480.42,363.61,240.51,328.72,228.50,188.00,283.84,270.18,312.45,226.58,211.73,299.80,151.34,229.02,268.54,257.26],
+      totalSpend:7377.61,totalClicks:7254,totalConversions:215.45,totalCTR:3.67,
+      campaigns:{
+        'PMAX':{spend:2869.16,clicks:3538,conversions:110.10},
+        'DS_Máx.Rendimiento':{spend:2432.50,clicks:2347,conversions:64.20},
+        'S | Brand':{spend:1314.34,clicks:593,conversions:25.08},
+        'DS_Sales':{spend:761.61,clicks:776,conversions:16.08},
+      },
+      // ── GA4 ─────────────────────────────────────────────────────────
+      sessByDay:[12027,4756,16907,38537,36752,26473,1610,2086,124907,108810,100817,97787,78858,47903,91915,76313,76989,75687,85185,75398,37808,11177,12030,47268,66612,79700,59509,2147,2236,2453],
+      totalSessions:1500657,totalActiveUsers:1504193,totalNewUsers:1499913,
+      medMap:{'(none)':1473334,'organic':14582,'cpc':7254,'email':297,'(not set)':10706},
+      // ── Shopify ──────────────────────────────────────────────────────
+      shopRevByDay:[3574.50,2664.00,3412.50,1877.00,2845.00,3506.00,2661.50,1366.50,1654.50,2771.50,1648.50,1564.50,1682.50,3301.50,3361.00,3476.00,2485.00,4621.00,2936.50,1391.50,2808.00,1789.50,4172.50,2763.50,3064.91,3079.73,3480.73,1806.00,2373.50,1336.50],
+      shopOrdByDay:[13,9,13,9,13,9,8,8,6,11,8,9,7,11,12,13,12,16,14,7,14,10,15,11,13,20,13,11,8,8],
+      totalShopRevenue:79475.87,totalOrders:331,totalRefunds:0,aov:240.11,
+      // ── Klaviyo ──────────────────────────────────────────────────────
+      emailByDay:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      emailTotal:0,emailRecipients:9686,
+      klaviyoCampaigns:[
+        {name:'JUN_1_Best Sellers',    type:'campaign',recipients:276, openRate:null,clickRate:0.0183,convRate:0.0037,aov:90.00,  revenue:90.00},
+        {name:'JUN_2_JEWELRY',         type:'campaign',recipients:3087,openRate:null,clickRate:0.0184,convRate:0.0007,aov:69.50,  revenue:139.00},
+        {name:'JUN_3_FATHERS DAY',     type:'campaign',recipients:2153,openRate:null,clickRate:0.0079,convRate:0,    aov:null,    revenue:0},
+        {name:'JUN_5_CARD',            type:'campaign',recipients:2111,openRate:null,clickRate:0.0105,convRate:0.0010,aov:330.40, revenue:660.81},
+        {name:'JUN_TESTIMONIALES',     type:'campaign',recipients:2059,openRate:null,clickRate:0.0098,convRate:0,    aov:null,    revenue:0},
+      ],
+      klaviyoFlows:[
+        {name:'Up Sell - Nameplates & Jewelry',         recipients:19,openRate:0.7368,clickRate:0.0526,convRate:0,clicks:1},
+        {name:'Customer Winback - Jewelry Offer',       recipients:14,openRate:0.5000,clickRate:0,     convRate:0,clicks:0},
+        {name:'Browse Abandonment - Standard',          recipients:13,openRate:0.2308,clickRate:0,     convRate:0,clicks:0},
+        {name:'Customer Thank You - New vs. Returning', recipients:11,openRate:0.9091,clickRate:0,     convRate:0,clicks:0},
+        {name:'Abandoned Checkout',                     recipients:6, openRate:0.8333,clickRate:0,     convRate:0,clicks:0},
+        {name:'Welcome Series - Popup',                 recipients:4, openRate:0.7500,clickRate:0,     convRate:0,clicks:0},
+        {name:'Sunset',                                 recipients:2, openRate:1.0000,clickRate:0,     convRate:0,clicks:0},
+      ],
+      // ── Facebook ─────────────────────────────────────────────────────
+      fbByDay:[],fbSpend:0,fbClicks:0,
+      // ── Flags ────────────────────────────────────────────────────────
+      hasGoogle:true,hasGA4:true,hasShopify:true,hasEmail:true,hasFacebook:false,
+    },
   },
 };
 const MONTH_ES=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -715,7 +758,7 @@ function setHidden(id,hidden){
   if(el)el.classList.toggle('hidden',hidden);
 }
 
-function getActiveYearMonth(){ return '2026-05'; }
+function getActiveYearMonth(){ return '2026-06'; }
 function daysInMonth(ym){
   const[y,m]=ym.split('-').map(Number);
   const cnt=new Date(y,m,0).getDate();
