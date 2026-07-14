@@ -5,6 +5,8 @@
 .hero{padding:64px 0 40px;}.hero .tag{font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gray-700);margin-bottom:20px;font-weight:500;}.hero h1{font-size:clamp(44px,7.5vw,110px);font-weight:900;line-height:0.9;letter-spacing:-0.04em;margin-bottom:0;}.hero h1 em{font-style:normal;font-weight:900;color:var(--mint);}.hero .subtitle{margin-top:24px;font-size:15px;color:var(--gray-700);max-width:720px;line-height:1.6;}.hero .subtitle b{color:var(--black);font-weight:600;}
 .hero-metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}.hm-chip{background:var(--white);border:1.5px solid var(--gray-200);border-radius:10px;padding:12px 18px;min-width:0;transition:border-color .18s;}.hm-chip:hover{border-color:var(--gray-400);}.hm-chip .hm-l{font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-700);margin-bottom:5px;}.hm-chip .hm-v{font-size:22px;font-weight:800;letter-spacing:-0.02em;color:var(--black);line-height:1;}
 .sk-row{display:grid;gap:10px;margin-bottom:28px;}.sk-card{background:var(--dark);color:var(--white);border-radius:12px;padding:20px 18px 16px;min-width:0;display:flex;flex-direction:column;border-top:3px solid rgba(255,255,255,.1);}.sk-card.sk-google{border-top-color:#4285F4;}.sk-card.sk-ga4{border-top-color:#E37400;}.sk-card.sk-shopify{border-top-color:#95BF47;}.sk-card.sk-klaviyo{border-top-color:var(--mint);}.sk-label{font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:14px;}.sk-value{font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;flex:1;}.sk-foot{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-height:26px;border-top:1px solid rgba(255,255,255,.08);padding-top:10px;margin-top:12px;}.sk-prev{font-size:10px;color:#60A5FA;font-weight:600;}.sk-unit{font-size:8px;font-weight:700;letter-spacing:.1em;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.45);margin-left:6px;vertical-align:middle;display:inline-block;}
+.sk-card{position:relative;}.sk-value{cursor:pointer;transition:opacity .15s;position:relative;}.sk-value:hover{opacity:.7;}.sk-value:hover::after{content:'✎';position:absolute;top:0;right:0;font-size:13px;opacity:.5;line-height:1;}.sk-value.sk-editing{opacity:1;cursor:default;}.sk-value.sk-editing::after{display:none;}.sk-edit-input{background:transparent;border:none;border-bottom:1.5px solid var(--mint);color:inherit;font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;width:100%;outline:none;padding:0;display:block;}.sk-card.sk-manual::after{content:'';position:absolute;top:8px;right:8px;width:6px;height:6px;border-radius:50%;background:var(--mint);pointer-events:none;}.sk-manual-reset{display:none;background:none;border:none;color:rgba(255,255,255,.35);font-size:9px;cursor:pointer;padding:0;letter-spacing:.06em;text-transform:uppercase;margin-left:auto;}.sk-card.sk-manual .sk-manual-reset{display:inline;}.sk-manual-reset:hover{color:var(--mint);}
+
 .kpi-hero{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:72px;}.kpi-card{background:var(--black);color:var(--white);border-radius:var(--radius);padding:24px 20px;}.kpi-card .label{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray-400);font-weight:600;margin-bottom:20px;}.kpi-card .value{font-size:40px;font-weight:800;line-height:1;letter-spacing:-0.02em;margin-bottom:8px;}.kpi-card .sub{font-size:11px;color:var(--gray-400);}.kpi-card .kpi-delta{display:flex;align-items:center;gap:7px;margin-top:10px;flex-wrap:wrap;}.kpi-card .kpi-delta .c-prev{font-size:11px;color:rgba(255,255,255,.35);}
 .cmp-toggle-row{display:flex;align-items:center;gap:8px;margin-left:auto;}.cmp-toggle{background:var(--dark);border-radius:999px;padding:3px;display:flex;gap:2px;}.cmp-tab{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:999px;border:none;cursor:pointer;color:rgba(255,255,255,.45);background:none;font-family:var(--font);transition:all .18s var(--ease);white-space:nowrap;}.cmp-tab.active{background:var(--mint);color:var(--black);}
 .section{margin-bottom:80px;}.section-head{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid var(--gray-400);}.section-head .left{display:flex;align-items:center;gap:16px;}.section-head h2{font-size:56px;font-weight:900;letter-spacing:-0.03em;line-height:1;}.section-head .right{font-size:13px;color:var(--gray-700);line-height:1.5;}.section-head .right b{color:var(--black);font-weight:600;}.channel-dot{width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:20px;flex-shrink:0;}.channel-dot.google{background:#fff;border:1.5px solid var(--gray-200);}.channel-dot.shopify{background:#95BF47;}.channel-dot.klaviyo{background:#1D1D1D;border:2px solid var(--gray-400);}.channel-dot.facebook{background:#0866FF;}.sub-head{font-size:20px;font-weight:800;letter-spacing:-0.01em;margin:40px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--gray-200);color:var(--gray-700);}
@@ -754,7 +756,8 @@ function insightLi(summary,detail=''){
 }
 function skCard(label,value,deltaHtml,prevFmt,platform='',unit=''){
   const unitHtml=unit?`<span class="sk-unit">${unit}</span>`:'';
-  return `<div class="sk-card${platform?' sk-'+platform:''}"><div class="sk-label">${label}${unitHtml}</div><div class="sk-value">${value}</div><div class="sk-foot">${deltaHtml||''}${prevFmt?`<span class="sk-prev">vs ${prevFmt}</span>`:''}</div></div>`;
+  const key=(platform||'misc')+'__'+label;
+  return `<div class="sk-card${platform?' sk-'+platform:''}" data-sk-key="${key}"><div class="sk-label">${label}${unitHtml}</div><div class="sk-value" data-sk-val="${key}">${value}</div><div class="sk-foot">${deltaHtml||''}${prevFmt?`<span class="sk-prev">vs ${prevFmt}</span>`:''}<button class="sk-manual-reset" data-sk-reset="${key}" title="Restaurar valor original">↺ reset</button></div></div>`;
 }
 function setSkRow(id,cards){const el=document.getElementById(id);if(el)el.innerHTML=cards.join('');}
 
@@ -1157,7 +1160,7 @@ function renderClient(clientName){
   document.getElementById('footer-date').textContent='Generado '+new Date().toISOString().split('T')[0];
 
   // Interactivity
-  setTimeout(()=>{setupCountUps();setupCopyValues();buildFloatNav();},60);
+  setTimeout(()=>{setupCountUps();setupCopyValues();buildFloatNav();setupEditableCards();},60);
 }
 
 function buildSwitcher(clients){
@@ -1313,6 +1316,67 @@ function setupCountUps(){
   },{threshold:0.4});
   document.querySelectorAll('.sk-value').forEach(el=>{
     delete el.dataset.counted;_countObs.observe(el);
+  });
+}
+
+/* ── EDITABLE CARDS ── */
+function setupEditableCards(){
+  const ym=getActiveYearMonth();
+  const SK='doos_edits_'+ym;
+  const saved=JSON.parse(localStorage.getItem(SK)||'{}');
+
+  // Apply previously saved overrides to DOM
+  Object.entries(saved).forEach(([key,val])=>{
+    const el=document.querySelector(`[data-sk-val="${key}"]`);
+    if(el){el.textContent=val;el.closest('.sk-card').classList.add('sk-manual');}
+  });
+
+  // Click on .sk-value to edit inline
+  document.querySelectorAll('.sk-value').forEach(el=>{
+    el.addEventListener('click',()=>{
+      if(el.querySelector('input'))return;
+      const original=el.textContent.trim();
+      const key=el.dataset.skVal;
+      el.classList.add('sk-editing');
+      const inp=document.createElement('input');
+      inp.className='sk-edit-input';
+      inp.value=original;
+      el.textContent='';
+      el.appendChild(inp);
+      inp.focus();inp.select();
+
+      function commit(){
+        const newVal=inp.value.trim()||original;
+        el.textContent=newVal;
+        el.classList.remove('sk-editing');
+        const card=el.closest('.sk-card');
+        const s=JSON.parse(localStorage.getItem(SK)||'{}');
+        if(newVal!==original){
+          s[key]=newVal;card.classList.add('sk-manual');
+        } else {
+          delete s[key];card.classList.remove('sk-manual');
+        }
+        localStorage.setItem(SK,JSON.stringify(s));
+      }
+      inp.addEventListener('blur',commit);
+      inp.addEventListener('keydown',e=>{
+        if(e.key==='Enter'){e.preventDefault();inp.blur();}
+        if(e.key==='Escape'){inp.value=original;inp.blur();}
+      });
+    });
+  });
+
+  // Reset buttons on individual cards
+  document.querySelectorAll('[data-sk-reset]').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const key=btn.dataset.skReset;
+      const s=JSON.parse(localStorage.getItem(SK)||'{}');
+      delete s[key];
+      localStorage.setItem(SK,JSON.stringify(s));
+      // Re-render to restore original values
+      renderClient(currentClient);
+    });
   });
 }
 
